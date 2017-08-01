@@ -7,3 +7,4 @@ def download_web_image(url):
     urllib.request.urlretrieve(url, full_name)
 
 download_web_image("https://assets-cdn.github.com/images/modules/logos_page/Octocat.png")
+
