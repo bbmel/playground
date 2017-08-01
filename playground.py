@@ -1,12 +1,9 @@
-def cigar_party(cigars, is_weekend):
-    if cigars >= 40 and is_weekend:
-        print('True')
-    elif cigars >= 40 and cigars <= 60:
-        print('True')
-    else:
-        print('False')
+import random
+import urllib.request
 
+def download_web_image(url):
+    name = random.randrange(1,1000)
+    full_name = str(name) + ".jpg"
+    urllib.request.urlretrieve(url, full_name)
 
-cigar_party(30, False)
-cigar_party(50, False)
-cigar_party(70, True)
+download_web_image("https://assets-cdn.github.com/images/modules/logos_page/Octocat.png")
