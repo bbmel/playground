@@ -1,11 +1,12 @@
-def same_first_last(nums):
-  first = nums[0]
-  last = nums[len(nums) - 1]
-  if len(nums) >= 1 and first is last:
-      print('True')
-  else:
-      print('False')
+def cigar_party(cigars, is_weekend):
+    if cigars >= 40 and is_weekend:
+        print('True')
+    elif cigars >= 40 and cigars <= 60:
+        print('True')
+    else:
+        print('False')
 
-same_first_last([1, 2, 3])
-same_first_last([1, 2, 3, 1])
-same_first_last([1, 2, 1])
+
+cigar_party(30, False)
+cigar_party(50, False)
+cigar_party(70, True)
