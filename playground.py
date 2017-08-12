@@ -1,10 +1,13 @@
-import random
-import urllib.request
+def double_char(str):
+  for i in str:
+      print(i * 2, end = "")
 
-def download_web_image(url):
-    name = random.randrange(1,1000)
-    full_name = str(name) + ".jpg"
-    urllib.request.urlretrieve(url, full_name)
 
-download_web_image("https://assets-cdn.github.com/images/modules/logos_page/Octocat.png")
+def count_hi(str):
+    count = 0
+    for i in range(len(str) - 1):
+        if str[i] + str[i + 1] == 'hi':
+            count += 1
+    print(count)
+
 
