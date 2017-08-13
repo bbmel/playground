@@ -1,6 +1,8 @@
 def reverseArr():
-    N = input('Enter the number of elements: ')
-    elems = input('Enter ' + N + " elements: ")
+    print('Enter the number of elements: ')
+    N = input()
+    print('Enter ' + N + ' elements: ')
+    elems = input()
     arr = elems.split(' ')
     arr = list(map(int, arr))
     revArr = arr[::-1]
