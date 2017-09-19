@@ -7,7 +7,7 @@ def fib(n):
     for i in range(2, n + 1):
         n = fibList[i - 1] + fibList[i - 2]
         fibList.append(n)
-    print (fibList[len(fibList) - 1])
+    return(fibList[n - 1])
 
-
-
+n = int(input())
+print(fib(n))
